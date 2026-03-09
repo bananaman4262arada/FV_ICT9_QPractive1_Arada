@@ -13,34 +13,33 @@
     <button class="btn btn-info" onclick="checkkWh()">Check Usage Level</button>
 
     <script>
-        function checkkWh(){
-            var kWh = document.getElementById("").value
+        function checkkWh() {
+            var kWh = document.getElementById("kWh").value;
+            
             var A = "Lifeline Consumer";
             var B = "Low Consumption";
             var C = "Average Consumption";
             var D = "High Consumption";
             var E = "Very High Consumption";
 
-            if(isNaN(kWh) || kWh < 0){
+            if (kWh === "" || isNaN(kWh) || kWh < 0) {
                 alert("Please assign a valid number.");
             }
-
-            else if(kWh <=100){
-                alert(A + "Discounted Electricity Rate.");
+            else if (kWh <= 100) {
+                alert(A + ": Discounted Electricity Rate.");
             }
-            else if(kWh <=200){
-                alert(B + "Normal Residential Rate.");
+            else if (kWh <= 200) {
+                alert(B + ": Normal Residential Rate.");
             }
-            else if(kWh <=300){
-                alert(C + "Typical Electricity Usage.");
+            else if (kWh <= 300) {
+                alert(C + ": Typical Electricity Usage.");
             }
-            else if(kWh <=500){
-                alert(D + "Higher Electricity Usage.");
+            else if (kWh <= 500) {
+                alert(D + ": Higher Electricity Usage.");
             }
-            else{
-                alert(E + "Heavy Electricity Usage.");
+            else {
+                alert(E + ": Heavy Electricity Usage.");
             }
-
         }
     </script>
 </body>
