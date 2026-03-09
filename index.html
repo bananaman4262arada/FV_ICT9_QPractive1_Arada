@@ -3,29 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q4Practice1</title>
+    <title>Q4Drill1</title>
 </head>
 <body>
     <h1>JavaScript Conditional Statements</h1>
 
-    <h2>Check Age classification</h2>
+    <h2>Check your wattage usage</h2>
     <br>
-    <button class="btn btn-info" onclick="checkAge()">Check Age</button>
+    <button class="btn btn-info" onclick="checkAge()">Check Usage Level</button>
 
     <script>
-        function checkAge(){
-            var age = 18;
-            if(isNan(age) || age < 0){
+        function checkKwh(){
+            var kWh= document.getElementById("").value
+            var A = "Lifeline Consumer";
+            var B = "Low Consumption"
+            var C = "Average Consumption"
+            var D = "High Consumption"
+            var E = "Very High Consumption"
+
+            if(isNan(kWh) || kWh < 0){
                 alert("Please assign a valid number.");
             }
-            else if(age <18){
-                alert("Can you leave? You're too young.");
+            if(age >=0){
+                alert("Discounted Energy Rates.");
             }
-            else if(age>=18){
-                alert("You're allowed to be on this website.");
+            if(age >=100){
+                alert("Normal Residential Rate.");
             }
-            else{
-                alert("What kinda age is that???");
+            if(age >=200){
+                alert("Typical Electricity Usage.");
+            }
+            if(age >=300){
+                alert("Higher Electricity Usage.");
+            }
+            else if(age >=500){
+                alert("Heavy Electricity Usage.");
             }
 
         }
