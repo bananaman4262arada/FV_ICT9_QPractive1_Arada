@@ -9,12 +9,13 @@
     <h1>JavaScript Conditional Statements</h1>
 
     <h2>Check your wattage usage</h2>
+    <input type="number" id="kWh">
     <br>
-    <button class="btn btn-info" onclick="checkAge()">Check Usage Level</button>
+    <button class="btn btn-info" onclick="checkkWh()">Check Usage Level</button>
 
     <script>
-        function checkKwh(){
-            var kWh= document.getElementById("").value
+        function checkkWh(){
+            var kWh = document.getElementById("").value
             var A = "Lifeline Consumer";
             var B = "Low Consumption"
             var C = "Average Consumption"
@@ -24,19 +25,19 @@
             if(isNan(kWh) || kWh < 0){
                 alert("Please assign a valid number.");
             }
-            if(age >=0){
+            if(kWh >=0){
                 alert("Discounted Energy Rates.");
             }
-            if(age >=100){
+            if(kWh >=100){
                 alert("Normal Residential Rate.");
             }
-            if(age >=200){
+            if(kWh >=200){
                 alert("Typical Electricity Usage.");
             }
-            if(age >=300){
+            if(kWh >=300){
                 alert("Higher Electricity Usage.");
             }
-            else if(age >=500){
+            else if(kWh >=500){
                 alert("Heavy Electricity Usage.");
             }
 
