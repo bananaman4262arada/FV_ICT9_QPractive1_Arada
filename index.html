@@ -6,11 +6,12 @@
     <title>Q4Drill1</title>
 </head>
 <body>
-    <h1>JavaScript Conditional Statements</h1>
-
-    <h2>Check your wattage usage</h2>
-    <input type="number" id="kWh">
-    <button class="btn btn-info" onclick="checkkWh()">Check Usage Level</button>
+    
+    <div style="display: flex; justify-content: center; align-items: center; gap: 10px; height: 200px; text-align: center; flex-wrap: wrap;">
+        <h2 style="width: 100%;">Check your wattage usage</h2>
+            <input type="number" id="kWh" placeholder="Enter kWh" style="padding: 5px;">
+            <button class="btn btn-info" onclick="checkkWh()">Check Usage Level</button>
+    </div>
 
     <script>
         function checkkWh() {
